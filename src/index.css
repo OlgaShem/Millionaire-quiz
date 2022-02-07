@@ -369,7 +369,37 @@ label {cursor: pointer;}
 .hide-score-table::-webkit-scrollbar {display: none;}
 .mobile-nav__check:checked~.hide-score-table {transform: translateX(0);}
 
+@media screen and (max-width: 1024px) {
+  .quiz-section {
+    width: 50%;
+  }
+
+  .answer-section {
+    display: block;
+  }
+
+  .score-table {
+    padding: 20px 0;
+  }
+}
+
+@media screen and (max-width: 896px) and (max-height: 420px){
+  .question-text {
+    font-size: 26px;
+  }
+  .button-answer {
+    margin: 0;
+  }
+  .start-wrap {
+    padding: 40px
+  }
+}
+
 @media screen and (max-width: 768px) {
+  .quiz-section {
+    width: auto;
+  }
+
   .container {
     position: relative;
     overflow: auto;
@@ -384,6 +414,7 @@ label {cursor: pointer;}
 
   .score-table {
     display: none;
+    padding: 60px 0;
   }
   
   .hand {
@@ -393,6 +424,12 @@ label {cursor: pointer;}
     margin: 0 auto;
   }
 
+  .total-content {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 60px;
+}
   .start-wrap {
     display: block;
     padding: 200px 0 0 0;
@@ -431,8 +468,19 @@ label {cursor: pointer;}
   }
 } 
 
-@media screen and (max-width: 520px) {
-  
+@media screen and (max-width: 670px) and (max-height: 375px){
+  .question-text {
+    font-size: 26px;
+  }
+  .button-answer {
+    margin: 0;
+  }
+  .start-wrap {
+    padding: 40px
+  }
+}
+
+@media screen and (max-width: 520px) { 
   body {
       height: 100%;
       overflow: hidden;
@@ -518,7 +566,6 @@ label {cursor: pointer;}
     font-size: 32px;
     line-height: 40px;
   }
-
 }
 
 @media screen and (max-width: 320px) { 
