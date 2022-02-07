@@ -523,6 +523,16 @@ label {cursor: pointer;}
 
 @media screen and (max-width: 320px) { 
   .button-answer {
-    width: 280px;
+    width: 250px;
+    height: 45px;
+  }
+  .score-cell {
+    width: 220px;
+    height: 30px;
+    justify-content: left;
+    padding-left: 20px;
+  }
+  .score-cell::after {
+    right: 0;
   }
 }
